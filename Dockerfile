@@ -1,3 +1,12 @@
+# Build stage for downloading models
+FROM python:3.12 as model-builder
+
+RUN pip install sentence-transformers
+
+# Download the model which will be cached
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
+
+# Main application stage
 FROM python:3.12
 
 RUN pip install uv
@@ -7,6 +16,9 @@ WORKDIR /code
 COPY ./pyproject.toml /code/pyproject.toml
 
 RUN uv sync
+
+# Copy the downloaded model cache from build stage
+COPY --from=model-builder /root/.cache /root/.cache
 
 COPY ./pull_agent /code/pull_agent
 COPY ./subagents /code/subagents
