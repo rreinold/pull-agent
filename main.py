@@ -20,6 +20,10 @@ app = FastAPI(lifespan=lifespan)
 async def get_role(subagent_role: str):
     return {"role_name": subagent_role, "message": f"Hello, {subagent_role}!"}
 
+@app.get("/api/status")
+async def get_status(subagent_role: str):
+    return {"status": "up!"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
