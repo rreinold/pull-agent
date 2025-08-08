@@ -1,5 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import PlainTextResponse
 import chromadb
 import os
 from pathlib import Path
@@ -44,11 +46,24 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-@app.get("/api/{subagent_role}")
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
+
+@app.get("/api/{subagent_role}", response_class=PlainTextResponse)
 async def get_role(subagent_role: str):
     global chroma_client
     if not chroma_client:
-        return {"error": "ChromaDB not initialized"}
+        return "Error: ChromaDB not initialized"
+    
+    # If role_name is empty, default to senior-backend-engineer
+    if not subagent_role or subagent_role.strip() == "":
+        subagent_role = "senior-backend-engineer"
     
     try:
         collection = chroma_client.get_collection(name="pull_agent_collection")
@@ -56,12 +71,7 @@ async def get_role(subagent_role: str):
         # First try exact ID lookup for performance
         exact_results = collection.get(ids=[subagent_role])
         if exact_results['documents'] and len(exact_results['documents']) > 0:
-            return {
-                "role_name": subagent_role,
-                "markdown": exact_results['documents'][0],
-                "metadata": exact_results['metadatas'][0] if exact_results['metadatas'] else None,
-                "match_type": "exact"
-            }
+            return exact_results['documents'][0]
         
         # Fall back to semantic vector search
         search_results = collection.query(
@@ -70,24 +80,13 @@ async def get_role(subagent_role: str):
         )
         
         if not search_results['documents'] or len(search_results['documents']) == 0 or len(search_results['documents'][0]) == 0:
-            return {"error": f"No subagent found similar to '{subagent_role}'"}
+            return f"Error: No subagent found similar to '{subagent_role}'"
         
-        # Get the best match
-        best_match_id = search_results['ids'][0][0]
-        best_match_document = search_results['documents'][0][0]
-        best_match_metadata = search_results['metadatas'][0][0] if search_results['metadatas'] and search_results['metadatas'][0] else None
-        similarity_score = search_results['distances'][0][0] if search_results.get('distances') else None
+        # Return just the markdown content as plain text
+        return search_results['documents'][0][0]
         
-        return {
-            "role_name": best_match_id,
-            "markdown": best_match_document,
-            "metadata": best_match_metadata,
-            "match_type": "semantic",
-            "similarity_score": similarity_score,
-            "query": subagent_role
-        }
     except Exception as e:
-        return {"error": f"Failed to retrieve subagent: {str(e)}"}
+        return f"Error: Failed to retrieve subagent: {str(e)}"
 
 @app.get("/status")
 async def get_status(subagent_role: str):
