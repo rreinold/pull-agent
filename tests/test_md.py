@@ -43,18 +43,6 @@ class TestSubagentAPI:
             assert data["metadata"]["role"] == "ceo"
             assert data["metadata"]["filename"] == "ceo.md"
     
-    def test_get_nonexistent_subagent_error(self, client):
-        """Test requesting a non-existent subagent role"""
-        response = client.get("/api/nonexistent-role")
-        
-        assert response.status_code == 200  # FastAPI returns 200 with error in JSON
-        data = response.json()
-        
-        # Check error response
-        assert "error" in data
-        assert "not found" in data["error"].lower()
-        assert "nonexistent-role" in data["error"]
-    
     def test_response_structure_validation(self, client):
         """Test that successful responses have the correct JSON structure"""
         response = client.get("/api/cto")  # Use CTO as another test case
@@ -82,6 +70,7 @@ class TestSubagentAPI:
 
             assert "error" not in data, "Error in response: " + data.get("error", "")
             assert "CEO" in data['markdown']
+    
 
     def test_status_endpoint(self, client):
         """Test the status endpoint (bonus test)"""

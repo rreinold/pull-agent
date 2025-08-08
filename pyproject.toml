@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12.7"
 dependencies = [
     "chromadb>=1.0.16",
-    "fastapi>=0.116.1",
+    "fastapi[standard]>=0.116.1",
     "rust-just>=1.42.4",
     "uvicorn>=0.35.0",
 ]
