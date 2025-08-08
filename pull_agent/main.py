@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 import chromadb
+from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import os
 from pathlib import Path
 
@@ -33,14 +34,20 @@ def load_subagent_configs(collection):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global chroma_client
+    # Configure embedding function to use the predownloaded model
+    embedding_function = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+    
     chroma_client = chromadb.Client()
-    # Create or get a collection
-    collection = chroma_client.get_or_create_collection(name="pull_agent_collection")
+    # Create or get a collection with the specific embedding function
+    collection = chroma_client.get_or_create_collection(
+        name="pull_agent_collection",
+        embedding_function=embedding_function
+    )
     
     # Load subagent configurations
     load_subagent_configs(collection)
     
-    print("ChromaDB initialized successfully")
+    print("ChromaDB initialized successfully with predownloaded all-MiniLM-L6-v2 model")
     yield
     # chrome db doesnt need shutdown
 
