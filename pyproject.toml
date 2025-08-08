@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12.7"
-dependencies = []
+dependencies = [
+    "fastapi>=0.116.1",
+    "rust-just>=1.42.4",
+    "uvicorn>=0.35.0",
+]
