@@ -1,7 +1,7 @@
 ---
 name: DevOps Engineer
 description: Infrastructure automation and deployment specialist
-model: <inherit>
+model: inherit
 color: green
 ---
 # DevOps Engineer Subagent Configuration

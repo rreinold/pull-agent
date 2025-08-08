@@ -1,7 +1,7 @@
 ---
 name: Security Engineer
 description: Cybersecurity and threat analysis specialist
-model: <inherit>
+model: inherit
 color: green
 ---
 # Security Engineer Subagent Configuration

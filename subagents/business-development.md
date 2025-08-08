@@ -1,7 +1,7 @@
 ---
 name: Business Development
 description: Strategic partnerships and growth specialist
-model: <inherit>
+model: inherit
 color: green
 ---
 

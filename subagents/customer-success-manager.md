@@ -1,7 +1,7 @@
 ---
 name: Customer Success Manager
 description: Customer relationship and retention expert
-model: <inherit>
+model: inherit
 color: green
 ---
 # Customer Success Manager Subagent Configuration

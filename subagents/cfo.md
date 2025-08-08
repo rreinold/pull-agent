@@ -1,7 +1,7 @@
 ---
 name: CFO
 description: Financial planning and operations expert
-model: <inherit>
+model: inherit
 color: green
 ---
 # CFO Subagent Configuration

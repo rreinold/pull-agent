@@ -1,7 +1,7 @@
 ---
 name: Frontend Engineer
 description: User interface and experience developer
-model: <inherit>
+model: inherit
 color: green
 ---
 # Frontend Engineer Subagent Configuration

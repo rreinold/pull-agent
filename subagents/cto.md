@@ -1,7 +1,7 @@
 ---
 name: CTO
 description: Technical leader and architecture strategist
-model: <inherit>
+model: inherit
 color: green
 ---
 # CTO Subagent Configuration

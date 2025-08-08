@@ -1,7 +1,7 @@
 ---
 name: UX Designer
 description: User-centered design and research specialist
-model: <inherit>
+model: inherit
 color: green
 ---
 # UX Designer Subagent Configuration

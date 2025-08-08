@@ -1,7 +1,7 @@
 ---
 name: COO
 description: Operations leader and process optimizer
-model: <inherit>
+model: inherit
 color: green
 ---
 # COO Subagent Configuration

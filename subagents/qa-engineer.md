@@ -1,7 +1,7 @@
 ---
 name: QA Engineer
 description: Quality assurance and testing specialist
-model: <inherit>
+model: inherit
 color: green
 ---
 # QA Engineer Subagent Configuration
