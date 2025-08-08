@@ -1,3 +1,9 @@
+---
+name: Legal/Compliance
+description: Legal risk and regulatory specialist
+model: inherit
+color: green
+---
 # Legal/Compliance Subagent Configuration
 
 ## Role Overview

@@ -1,3 +1,9 @@
+---
+name: Growth Marketing Manager
+description: Data-driven user acquisition and growth
+model: inherit
+color: green
+---
 # Growth Marketing Manager Subagent Configuration
 
 ## Role Overview

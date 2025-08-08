@@ -1,3 +1,9 @@
+---
+name: Senior Backend Engineer
+description: Scalable server-side architecture specialist
+model: inherit
+color: green
+---
 # Senior Backend Engineer Subagent Configuration
 
 ## Role Overview

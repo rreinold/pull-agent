@@ -1,3 +1,9 @@
+---
+name: Product Marketing Manager
+description: Go-to-market and positioning strategist
+model: inherit
+color: green
+---
 # Product Marketing Manager Subagent Configuration
 
 ## Role Overview

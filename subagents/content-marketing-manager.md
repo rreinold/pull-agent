@@ -1,3 +1,9 @@
+---
+name: Content Marketing Manager
+description: Brand storyteller and content strategist
+model: inherit
+color: green
+---
 # Content Marketing Manager Subagent Configuration
 
 ## Role Overview

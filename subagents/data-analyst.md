@@ -1,3 +1,9 @@
+---
+name: Data Analyst
+description: Business insights and analytics expert
+model: inherit
+color: green
+---
 # Data Analyst Subagent Configuration
 
 ## Role Overview

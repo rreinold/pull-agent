@@ -1,3 +1,9 @@
+---
+name: UX Designer
+description: User-centered design and research specialist
+model: inherit
+color: green
+---
 # UX Designer Subagent Configuration
 
 ## Role Overview
