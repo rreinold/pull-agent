@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: COO
+description: Operations leader and process optimizer
 model: <inherit>
 color: green
 ---

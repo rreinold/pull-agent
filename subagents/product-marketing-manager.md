@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Product Marketing Manager
+description: Go-to-market and positioning strategist
 model: <inherit>
 color: green
 ---

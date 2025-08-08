@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Data Analyst
+description: Business insights and analytics expert
 model: <inherit>
 color: green
 ---

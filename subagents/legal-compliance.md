@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Legal/Compliance
+description: Legal risk and regulatory specialist
 model: <inherit>
 color: green
 ---

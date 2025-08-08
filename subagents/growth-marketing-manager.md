@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Growth Marketing Manager
+description: Data-driven user acquisition and growth
 model: <inherit>
 color: green
 ---

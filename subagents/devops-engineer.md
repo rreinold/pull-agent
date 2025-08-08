@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: DevOps Engineer
+description: Infrastructure automation and deployment specialist
 model: <inherit>
 color: green
 ---

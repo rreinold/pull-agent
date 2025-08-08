@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Frontend Engineer
+description: User interface and experience developer
 model: <inherit>
 color: green
 ---

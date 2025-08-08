@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: CFO
+description: Financial planning and operations expert
 model: <inherit>
 color: green
 ---

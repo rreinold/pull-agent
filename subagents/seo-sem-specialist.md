@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: SEO/SEM Specialist
+description: Search optimization and marketing expert
 model: <inherit>
 color: green
 ---

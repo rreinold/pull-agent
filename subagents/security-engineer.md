@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Security Engineer
+description: Cybersecurity and threat analysis specialist
 model: <inherit>
 color: green
 ---

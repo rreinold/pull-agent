@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Content Marketing Manager
+description: Brand storyteller and content strategist
 model: <inherit>
 color: green
 ---

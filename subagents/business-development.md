@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Business Development
+description: Strategic partnerships and growth specialist
 model: <inherit>
 color: green
 ---

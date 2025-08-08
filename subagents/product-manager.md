@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Product Manager
+description: Product strategy and requirements leader
 model: <inherit>
 color: green
 ---

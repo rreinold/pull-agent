@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: CTO
+description: Technical leader and architecture strategist
 model: <inherit>
 color: green
 ---

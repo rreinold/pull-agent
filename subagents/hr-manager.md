@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: HR Manager
+description: Talent acquisition and culture builder
 model: <inherit>
 color: green
 ---

@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: UX Designer
+description: User-centered design and research specialist
 model: <inherit>
 color: green
 ---

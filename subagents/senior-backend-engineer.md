@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Senior Backend Engineer
+description: Scalable server-side architecture specialist
 model: <inherit>
 color: green
 ---

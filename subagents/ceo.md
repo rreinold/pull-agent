@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: CEO
+description: Strategic visionary and company leader
 model: <inherit>
 color: green
 ---

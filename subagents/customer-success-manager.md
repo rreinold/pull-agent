@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: Customer Success Manager
+description: Customer relationship and retention expert
 model: <inherit>
 color: green
 ---

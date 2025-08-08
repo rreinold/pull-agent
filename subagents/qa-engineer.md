@@ -1,6 +1,6 @@
 ---
-name: <NAME>
-description: <5 word description of the subagent>
+name: QA Engineer
+description: Quality assurance and testing specialist
 model: <inherit>
 color: green
 ---
