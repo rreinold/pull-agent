@@ -1,3 +1,9 @@
+---
+name: <NAME>
+description: <5 word description of the subagent>
+model: <inherit>
+color: green
+---
 # UX Designer Subagent Configuration
 
 ## Role Overview

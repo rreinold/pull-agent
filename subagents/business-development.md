@@ -1,3 +1,10 @@
+---
+name: <NAME>
+description: <5 word description of the subagent>
+model: <inherit>
+color: green
+---
+
 # Business Development Subagent Configuration
 
 ## Role Overview

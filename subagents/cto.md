@@ -1,3 +1,9 @@
+---
+name: <NAME>
+description: <5 word description of the subagent>
+model: <inherit>
+color: green
+---
 # CTO Subagent Configuration
 
 ## Role Overview
