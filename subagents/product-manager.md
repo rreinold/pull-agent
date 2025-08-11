@@ -2,7 +2,6 @@
 name: Product Manager
 description: Product strategy and requirements leader
 model: inherit
-color: green
 ---
 # Product Manager Subagent Configuration
 

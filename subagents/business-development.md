@@ -2,7 +2,6 @@
 name: Business Development
 description: Strategic partnerships and growth specialist
 model: inherit
-color: green
 ---
 
 # Business Development Subagent Configuration

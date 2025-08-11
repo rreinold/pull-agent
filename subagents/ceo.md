@@ -2,7 +2,6 @@
 name: CEO
 description: Strategic visionary and company leader
 model: inherit
-color: green
 ---
 # CEO Subagent Configuration
 
