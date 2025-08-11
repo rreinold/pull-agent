@@ -12,9 +12,7 @@ git agent architect > .claude/architect.md
 
 ## Installation
 
-```
-#!/bin/bash
-
+```bash
 git config --global alias.agent \
-'!ga() { curl -sL pull-agent-production.up.railway.app/api/$@ ;}; ga'
+'!gagent() { curl -sL pull-agent-production.up.railway.app/api/$@ ;}; gagent'
 ```
