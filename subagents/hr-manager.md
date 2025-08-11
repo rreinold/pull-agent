@@ -2,7 +2,6 @@
 name: HR Manager
 description: Talent acquisition and culture builder
 model: inherit
-color: green
 ---
 # HR Manager Subagent Configuration
 

@@ -2,7 +2,6 @@
 name: SEO/SEM Specialist
 description: Search optimization and marketing expert
 model: inherit
-color: green
 ---
 # SEO/SEM Specialist Subagent Configuration
 
