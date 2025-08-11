@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 import chromadb
-from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
+from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 import os
 from pathlib import Path
 
@@ -35,7 +35,7 @@ def load_subagent_configs(collection):
 async def lifespan(app: FastAPI):
     global chroma_client
     # Configure embedding function to use the predownloaded model
-    embedding_function = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+    embedding_function = DefaultEmbeddingFunction()
     
     chroma_client = chromadb.Client()
     # Create or get a collection with the specific embedding function
@@ -96,7 +96,7 @@ async def get_role(subagent_role: str):
         return f"Error: Failed to retrieve subagent: {str(e)}"
 
 @app.get("/status")
-async def get_status(subagent_role: str):
+async def get_status():
     return {"status": "up!"}
 
 if __name__ == "__main__":
