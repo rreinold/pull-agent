@@ -1,5 +1,5 @@
 ---
-name: UX Designer
+name: ux-designer
 description: User-centered design and research specialist
 model: inherit
 ---

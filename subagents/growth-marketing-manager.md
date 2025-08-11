@@ -1,5 +1,5 @@
 ---
-name: Growth Marketing Manager
+name: growth-marketing-manager
 description: Data-driven user acquisition and growth
 model: inherit
 ---

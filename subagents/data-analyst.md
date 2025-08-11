@@ -1,5 +1,5 @@
 ---
-name: Data Analyst
+name: data-analyst
 description: Business insights and analytics expert
 model: inherit
 ---

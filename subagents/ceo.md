@@ -1,5 +1,5 @@
 ---
-name: CEO
+name: ceo
 description: Strategic visionary and company leader
 model: inherit
 ---

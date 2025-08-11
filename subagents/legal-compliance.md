@@ -1,5 +1,5 @@
 ---
-name: Legal/Compliance
+name: legal-compliance
 description: Legal risk and regulatory specialist
 model: inherit
 ---

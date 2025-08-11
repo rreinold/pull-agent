@@ -1,5 +1,5 @@
 ---
-name: SEO/SEM Specialist
+name: seo-sem-specialist
 description: Search optimization and marketing expert
 model: inherit
 ---

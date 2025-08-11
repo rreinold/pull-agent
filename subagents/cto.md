@@ -1,5 +1,5 @@
 ---
-name: CTO
+name: cto
 description: Technical leader and architecture strategist
 model: inherit
 ---

@@ -1,5 +1,5 @@
 ---
-name: Customer Success Manager
+name: customer-success-manager
 description: Customer relationship and retention expert
 model: inherit
 ---

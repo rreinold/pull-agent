@@ -1,5 +1,5 @@
 ---
-name: Content Marketing Manager
+name: content-marketing-manager
 description: Brand storyteller and content strategist
 model: inherit
 ---
