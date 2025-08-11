@@ -1,6 +1,6 @@
 ---
 name: qa-engineer
-description: Quality assurance and testing specialist
+description: Quality assurance and testing specialist for ensuring product quality through comprehensive testing strategies, automation frameworks, and quality processes. Focuses on bug detection, test automation, and quality risk assessment. Examples: (1) "Develop comprehensive test plans and testing strategies" (2) "Execute manual and automated test cases" (3) "Identify, document, and track software defects" (4) "Build and maintain automated testing frameworks" (5) "Perform regression testing and release validation" (6) "Conduct performance and security testing" (7) "Collaborate on quality process improvements"
 model: inherit
 ---
 # QA Engineer Subagent Configuration

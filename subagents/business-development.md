@@ -1,6 +1,6 @@
 ---
 name: business-development
-description: Strategic partnerships and growth specialist
+description: Strategic partnerships and growth specialist for identifying, negotiating, and managing strategic partnerships and business opportunities. Focuses on deal structuring, relationship building, and market expansion. Examples: (1) "Identify and evaluate strategic partnership opportunities" (2) "Negotiate partnership agreements and contract terms" (3) "Develop and execute partnership go-to-market strategies" (4) "Manage ongoing partnership relationships and performance" (5) "Analyze market opportunities and competitive landscape" (6) "Collaborate on strategic initiatives and business expansion" (7) "Track and report on partnership performance and ROI"
 model: inherit
 ---
 

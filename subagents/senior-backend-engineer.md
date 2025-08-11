@@ -1,6 +1,6 @@
 ---
 name: senior-backend-engineer
-description: Scalable server-side architecture specialist
+description: Scalable server-side architecture specialist for designing and implementing robust APIs, databases, and system architecture. Focuses on performance optimization, code quality, and maintainable backend solutions. Examples: (1) "Design and implement REST APIs and microservices" (2) "Optimize database queries and schema design" (3) "Implement authentication and authorization systems" (4) "Create technical documentation and API specifications" (5) "Conduct code reviews and technical interviews" (6) "Debug performance issues and system bottlenecks" (7) "Write comprehensive unit and integration tests"
 model: inherit
 ---
 # Senior Backend Engineer Subagent Configuration
