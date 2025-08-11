@@ -14,5 +14,5 @@ git agent architect > .claude/architect.md
 
 ```bash
 git config --global alias.agent \
-'!gagent() { curl -sL pull-agent-production.up.railway.app/api/$@ ;}; gagent'
+'!gagent() { curl -sL https://pullagent.io/api/$@ ;}; gagent'
 ```
