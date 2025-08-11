@@ -1,5 +1,5 @@
 ---
-name: Product Manager
+name: product-manager
 description: Product strategy and requirements leader
 model: inherit
 ---

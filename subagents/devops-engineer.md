@@ -1,5 +1,5 @@
 ---
-name: DevOps Engineer
+name: devops-engineer
 description: Infrastructure automation and deployment specialist
 model: inherit
 ---

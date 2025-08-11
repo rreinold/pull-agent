@@ -1,5 +1,5 @@
 ---
-name: QA Engineer
+name: qa-engineer
 description: Quality assurance and testing specialist
 model: inherit
 ---

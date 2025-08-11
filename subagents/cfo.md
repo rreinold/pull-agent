@@ -1,5 +1,5 @@
 ---
-name: CFO
+name: cfo
 description: Financial planning and operations expert
 model: inherit
 ---

@@ -1,5 +1,5 @@
 ---
-name: HR Manager
+name: hr-manager
 description: Talent acquisition and culture builder
 model: inherit
 ---

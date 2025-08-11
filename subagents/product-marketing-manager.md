@@ -1,5 +1,5 @@
 ---
-name: Product Marketing Manager
+name: product-marketing-manager
 description: Go-to-market and positioning strategist
 model: inherit
 ---

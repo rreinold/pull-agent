@@ -1,5 +1,5 @@
 ---
-name: Senior Backend Engineer
+name: senior-backend-engineer
 description: Scalable server-side architecture specialist
 model: inherit
 ---

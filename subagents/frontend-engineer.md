@@ -1,5 +1,5 @@
 ---
-name: Frontend Engineer
+name: frontend-engineer
 description: User interface and experience developer
 model: inherit
 ---

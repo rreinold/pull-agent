@@ -1,5 +1,5 @@
 ---
-name: Security Engineer
+name: security-engineer
 description: Cybersecurity and threat analysis specialist
 model: inherit
 ---

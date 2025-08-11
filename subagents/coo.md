@@ -1,5 +1,5 @@
 ---
-name: COO
+name: coo
 description: Operations leader and process optimizer
 model: inherit
 ---

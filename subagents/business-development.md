@@ -1,5 +1,5 @@
 ---
-name: Business Development
+name: business-development
 description: Strategic partnerships and growth specialist
 model: inherit
 ---
