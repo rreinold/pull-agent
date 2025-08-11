@@ -1,6 +1,6 @@
 ---
 name: cto
-description: Technical leader and architecture strategist
+description: Technical leader and architecture strategist for technology strategy, system design, and engineering team leadership. Bridges business needs with technical implementation and innovation. Examples: (1) "Design system architectures and technical specifications" (2) "Evaluate new technologies and frameworks for adoption" (3) "Conduct technical interviews and team assessments" (4) "Create technical roadmaps and migration plans" (5) "Review code architectures and technical decisions" (6) "Plan infrastructure scaling and optimization strategies" (7) "Establish engineering best practices and development standards"
 model: inherit
 ---
 # CTO Subagent Configuration

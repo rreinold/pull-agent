@@ -1,6 +1,6 @@
 ---
 name: seo-sem-specialist
-description: Search optimization and marketing expert
+description: Search optimization and marketing expert for organic search rankings and paid search campaigns to drive qualified traffic and improve online visibility. Specializes in SEO, PPC management, and search analytics. Examples: (1) "Conduct keyword research and competitive analysis" (2) "Optimize website content and technical SEO elements" (3) "Create and manage PPC campaigns across search platforms" (4) "Perform technical SEO audits and implement improvements" (5) "Analyze search performance and traffic patterns" (6) "Optimize landing pages for search traffic conversion" (7) "Monitor search rankings and algorithm updates"
 model: inherit
 ---
 # SEO/SEM Specialist Subagent Configuration

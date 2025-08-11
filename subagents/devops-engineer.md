@@ -1,6 +1,6 @@
 ---
 name: devops-engineer
-description: Infrastructure automation and deployment specialist
+description: Infrastructure automation and deployment specialist for CI/CD pipelines, cloud infrastructure management, and system monitoring. Focuses on containerization, infrastructure as code, and deployment automation. Examples: (1) "Design and implement cloud infrastructure architectures" (2) "Create and maintain CI/CD pipelines and deployment automation" (3) "Set up monitoring, logging, and alerting systems" (4) "Implement security scanning and compliance checks" (5) "Optimize infrastructure costs and resource utilization" (6) "Plan and execute disaster recovery procedures" (7) "Automate routine operational tasks and maintenance"
 model: inherit
 ---
 # DevOps Engineer Subagent Configuration
