@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
+from fastapi.staticfiles import StaticFiles
 import chromadb
 from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 import os
@@ -61,6 +62,11 @@ app.add_middleware(
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
 )
+
+# Mount static files from public directory
+public_dir = Path(__file__).parent.parent / "public"
+if public_dir.exists():
+    app.mount("/", StaticFiles(directory=str(public_dir), html=True), name="static")
 
 @app.get("/api/{subagent_role}", response_class=PlainTextResponse)
 async def get_role(subagent_role: str):
