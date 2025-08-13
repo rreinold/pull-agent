@@ -10,6 +10,7 @@ RUN uv sync
 
 COPY ./pull_agent /code/pull_agent
 COPY ./subagents /code/subagents
+COPY ./public /code/public
 COPY ./download_model.py /code/download_model.py
 
 # Download and cache the embedding model
