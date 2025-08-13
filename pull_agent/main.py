@@ -63,11 +63,6 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-# Mount static files from public directory
-public_dir = Path(__file__).parent.parent / "public"
-if public_dir.exists():
-    app.mount("/", StaticFiles(directory=str(public_dir), html=True), name="static")
-
 @app.get("/api/{subagent_role}", response_class=PlainTextResponse)
 async def get_role(subagent_role: str):
     global chroma_client
@@ -104,6 +99,11 @@ async def get_role(subagent_role: str):
 @app.get("/status")
 async def get_status():
     return {"status": "up!"}
+
+# Mount static files from public directory (must be last)
+public_dir = Path(__file__).parent.parent / "public"
+if public_dir.exists():
+    app.mount("/", StaticFiles(directory=str(public_dir), html=True), name="static")
 
 if __name__ == "__main__":
     import uvicorn
