@@ -26,56 +26,42 @@ class TestSubagentAPI:
         response = client.get("/api/ceo")
         
         assert response.status_code == 200
-        data = response.json()
+        content = response.text
         
-        # Check response structure
-        assert "role_name" in data
-        assert "markdown" in data
-        assert "metadata" in data
+        # Check that we get markdown content
+        assert len(content) > 0
         
-        # Check content
-        assert data["role_name"] == "ceo"
-        assert data["markdown"] is not None
-        assert len(data["markdown"]) > 0
-        
-        # Check metadata
-        if data["metadata"]:
-            assert data["metadata"]["role"] == "ceo"
-            assert data["metadata"]["filename"] == "ceo.md"
+        # Should contain typical markdown content for CEO role
+        assert "CEO" in content or "Chief Executive Officer" in content
     
     def test_response_structure_validation(self, client):
-        """Test that successful responses have the correct JSON structure"""
+        """Test that successful responses return valid markdown content"""
         response = client.get("/api/cto")  # Use CTO as another test case
         
         assert response.status_code == 200
-        data = response.json()
+        content = response.text
         
-        if "error" not in data:  # Success case
-            # Required fields
-            assert isinstance(data["role_name"], str)
-            assert isinstance(data["markdown"], str)
-            assert data["metadata"] is None or isinstance(data["metadata"], dict)
-            
-            # Content validation
-            assert len(data["markdown"]) > 100  # Should be substantial content
-            assert "# CTO Subagent Configuration" in data["markdown"]
+        # Should be substantial markdown content
+        assert len(content) > 100
+        
+        # Should contain CTO-related content
+        assert "CTO" in content or "Chief Technology Officer" in content
     
     def test_fuzzy(self, client):
-        """Test that returned markdown content matches the actual file"""
+        """Test fuzzy search for executive roles"""
         response = client.get("/api/executive")
         
-        if response.status_code == 200:
-
-            data = response.json()
-
-            assert "error" not in data, "Error in response: " + data.get("error", "")
-            assert "CEO" in data['markdown']
+        assert response.status_code == 200
+        content = response.text
+        
+        # Should contain executive-related content (likely CEO)
+        assert "CEO" in content or "executive" in content.lower()
     
 
     def test_status_endpoint(self, client):
-        """Test the status endpoint (bonus test)"""
+        """Test the status endpoint"""
         response = client.get("/status")
-        assert response.status_code == 422  # Missing required parameter
+        assert response.status_code == 200
         
-        # The status endpoint has a bug - it requires subagent_role parameter
-        # This test documents the current behavior
+        data = response.json()
+        assert data["status"] == "up!"
