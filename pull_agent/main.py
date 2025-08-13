@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
+from fastapi.staticfiles import StaticFiles
 import chromadb
 from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 import os
@@ -98,6 +99,11 @@ async def get_role(subagent_role: str):
 @app.get("/status")
 async def get_status():
     return {"status": "up!"}
+
+# Mount static files from public directory (must be last)
+public_dir = Path(__file__).parent.parent / "public"
+if public_dir.exists():
+    app.mount("/", StaticFiles(directory=str(public_dir), html=True), name="static")
 
 if __name__ == "__main__":
     import uvicorn
