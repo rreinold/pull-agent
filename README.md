@@ -13,7 +13,7 @@
 
 🌐 **[Visit pullagent.io](https://pullagent.io)**
 
-![Demo](out2.gif)
+![Demo](preview.gif)
 
 </div>
 
